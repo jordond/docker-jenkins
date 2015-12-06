@@ -3,11 +3,14 @@ MAINTAINER jordond
 
 USER root
 
+RUN dpkg --add-architecture i386
+
 RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
     lib32z1 lib32ncurses5 \
+    libncurses5:i386 libstdc++6:i386 zlib1g:i386 \
     nodejs \
     rsync
 
