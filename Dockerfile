@@ -7,7 +7,7 @@ RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
-    ia32-libs \
+    lib32z1 lib32ncurses5 \
     nodejs \
     rsync
 
