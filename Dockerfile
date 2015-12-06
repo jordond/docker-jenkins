@@ -7,8 +7,7 @@ RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
-    libc6:i386 \
-    libstdc++6:i386 \
+    ia32-libs \
     nodejs \
     rsync
 
